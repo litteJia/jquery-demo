@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>评价系统-省厅用户首页</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Base Css -->
+	<link href="assets/css/base.css" rel="stylesheet">
+    <!-- Index Css -->
+	<link rel="stylesheet" href="assets/css/index.css">
+    
+	<!-- 如需支持IE8下面的响应式特性，务必加入以下代码并通过 http 协议访问页面（例如搭建 apache、nginx 等）， -->
+	<!--[if lt IE 9]>
+	<script src="assets/lib/html5shiv/html5shiv.js"></script>
+	<script src="assets/lib/respond/respond.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!-- top -->
+<div class="navbar navbar-default navbar-static-top top1">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_index"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo_2" href="#"><img src="assets/images/logo/logo_w.png" style="margin-top:-3px"/>普通本科高校评价系统</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#" class="dropdown-toggle grxx" data-toggle="dropdown"><img src="assets/images/user_logo.jpg"
+                                                                                     width="28" height="28"></a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a href="#"><i class="top_png qh"></i>角色切换</a>
+                        <ul class="dropdown-menu left">
+                            <li><a tabindex="-1" href="#"><span class="glyphicon glyphicon-ok float_r"></span>管理员</a>
+                            </li>
+                            <li><a tabindex="-1" href="#">教师</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="top_png mm"></i>修改密码</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">当前还没有新消息</li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="top_png tc"></i>退出登陆</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="搜索服务功能">
+        </form>
+    </div>
+</div>
+<!-- top-end -->
+<!-- start: main -->
+<div class="container p-t-10">
+	<div class="row main margin_t30">
+    <!-- leftNav -->
+        <div class="col-md-3 nav_left">
+            <div class="leftsidebar_box">
+               <dl>
+                    <dt>基础数据管理<img src="assets/images/leftnav/close.png"></dt>
+                    <dd><a href="#">充值记录</a></dd>
+                    <dd><a href="#">短信充值记录</a></dd>
+                    <dd><a href="#">消费记录</a></dd>
+                    <dd><a href="#">操作记录</a></dd>
+               </dl>
+               <dl>
+                    <dt>分类评价管理<img src="assets/images/leftnav/close.png"></dt>
+                    <dd><a href="#">客户管理</a></dd>
+                    <dd><a href="#">试用/成交客户管理</a></dd>
+                    <dd><a href="#">未成交客户管理</a></dd>
+                    <dd><a href="#">即将到期客户管理</a></dd>
+               </dl>
+               <dl>
+                   <dt>统计分析<img src="assets/images/leftnav/close.png"></dt>
+                   <dd><a href="#">渠道主页</a></dd>
+                   <dd><a href="#">渠道标准管理</a></dd>
+                   <dd><a href="#">系统通知</a></dd>
+                   <dd><a href="#">渠道商管理</a></dd>
+                   <dd><a href="#">渠道商链接</a></dd>
+               </dl>   
+               <dl>
+                   <dt>历年数据<img src="assets/images/leftnav/close.png"></dt>
+                   <dd><a href="#">渠道主页</a></dd>
+                   <dd><a href="#">渠道标准管理</a></dd>
+                   <dd><a href="#">系统通知</a></dd>
+                   <dd><a href="#">渠道商管理</a></dd>
+                   <dd><a href="#">渠道商链接</a></dd>
+               </dl>   
+               <dl>
+                   <dt>系统管理<img src="assets/images/leftnav/close.png"></dt>
+                   <dd><a href="#">渠道主页</a></dd>
+                   <dd><a href="#">渠道标准管理</a></dd>
+                   <dd><a href="#">系统通知</a></dd>
+                   <dd><a href="#">渠道商管理</a></dd>
+                   <dd><a href="#">渠道商链接</a></dd>
+               </dl>    
+            </div>
+	    </div>
+    <!-- rightContentShow -->
+		<div class="col-md-9 content_show">
+            <!-- firstRow -->
+			<div class="row margin_b30">
+                <!-- left_echartsShow -->
+                <div class="col-md-8 "> 
+                    <div class="echarts_show">
+                        <!-- tab & bar -->
+                        <div class="leftchart">
+                            <h6>高校完成进度</h6>
+                            <ul class="tabs" id="mytab">
+                            <li class="active"><a href="#yj" data-toggle="tab">研究为主型</a></li>
+                            <li><a href="#jxky" data-toggle="tab">教学科研为主型</a></li>
+                            <li><a href="#jx" data-toggle="tab">教学为主型</a></li>       
+                            </ul>
+                        
+                            <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade in active" id="yj">
+                                <img src="assets/images/echarts.png" alt="" class="img-responsive">
+                                <!-- <div id="echarts_progress"  style="width: 425px;height:190px;"></div> -->
+                            </div>
+                            <div class="tab-pane fade" id="jxky"><img src="assets/images/echarts.png" alt="" class="img-responsive"></div>
+                            <div class="tab-pane fade" id="jx"><img src="assets/images/echarts.png" alt="" class="img-responsive"></div>
+                            </div>                            
+                        </div>   
+                    
+                    <!-- pie -->
+                    <div id="echarts_index" style="width: 50%;height:244px;"></div>
+               </div> 
+                </div>
+                <!-- right_rankList -->
+                <div class="col-md-4">
+                    <div class="rankList">
+                        <h6>分类评价排行</h6>
+                        <ul>
+                            <li><span class="order rl_title">序号</span><span class="school rl_title">学校名称</span><span class="reslut rl_title">评价结果</span></li>
+                            <li><span class="order">01</span><span class="school">浙江大学</span><span class="reslut">980</span></li>
+                            <li><span class="order">02</span><span class="school">宁波大学</span><span class="reslut">978</span></li>
+                            <li><span class="order">03</span><span class="school">中国美术学院</span><span class="reslut">965</span></li>
+                            <li><span class="order">04</span><span class="school">浙江工业大学</span><span class="reslut">962</span></li>
+                            <li><span class="order">05</span><span class="school">浙江师范大学</span><span class="reslut">961</span></li>
+                            <li><span class="order">06</span><span class="school">浙江理工大学</span><span class="reslut">960</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- secondRow -->
+            <div class="row margin_b30">
+                <!-- left_notice -->
+                <div class="col-md-5">
+                    <div class="notice">
+                    <div class="notice_title">
+                        <span class="icon"><img src="assets/images/notice.png" alt="通知公告"></span>
+                        <h5>通知公告</h5>
+                        <a class="more" href="#"><img src="assets/images/arrow.png" alt="more"></a>
+                    </div>
+                    <div class="notice_content">
+                        <ul>
+                            <li><a href="#">【社科院】关于召开领导干部工作会议的通知<img class="new" src="assets/images/new.png" alt="new"></a><span class="notice_time">2014-12-23</span></li>
+                            <li><a href="#">【社科院】关于报送创建文明单位的通知</a><span class="notice_time">2014-11-13</span></li>
+                            <li><a href="#">【科研院】关于国家自然科学基金申报的通知</a><span class="notice_time">2014-11-12</span></li>
+                            <li><a href="#">【社科院】关于召开领导干部工作会议的通知</a><span class="notice_time">2014-12-23</span></li>
+                            <li><a href="#">【社科院】关于报送创建文明单位的通知</a><span class="notice_time">2014-11-13</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- right_task -->
+                <div class="col-md-7">
+                    <div class="task">
+                    <div class="task_title">
+                        <span class="icon"><img src="assets/images/toolkit.png" alt="任务"></span>
+                        <h5>任务</h5>
+                        <a class="more" href="#"><img src="assets/images/arrow.png" alt="more"></a>
+                    </div>
+                    <div class="task_content">
+                        <ul>
+                            <li>
+                                <!-- <i class="fa fa-calendar pull-left fa-large"></i> -->
+                                <a href="#" class="paper"><b>您有一篇论文：</b>  MRP4 (ABCC4) PROTECELLS FROM ARSENIC  THROUGH ACID <b>需要认领</b></a>
+                                <span class="task_time">3小时前</span>
+                            </li>
+                            <li>
+                                <a href="#" class="project"><b>您有一个项目：</b>基于移动智能设备的可穿戴式心电实时监测与分析系统 <b>将在</b>2014-12-22日 <b>超期,请及时结题</b></a>
+                                <span class="task_time">2天前</span>
+                            </li>
+                            <li class="last">
+                                <a href="#" class="patent"><b>您有一个专利申请：</b>一种碳纳米管复合基因载体系统及其制备方法 <b>被管理员退</b></a>
+                                <span class="task_time">3个月前</span>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- thirdRow -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- process chart-->
+                    <div class="pro_box green_pro">
+                    <!-- list -->
+                    <ul>
+                        <li>
+                            <a href="javascript:;">指标管理<br />(省厅用户)</a>
+                            <div class="pro_tips"></div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">计算及规则管理(省厅用户)</a>
+                            <div class="pro_tips"></div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">年度评价指标发布(省厅用户)</a>
+                            <div class="pro_tips"></div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">设置评价任务(省厅用户)</a>
+                            <div class="pro_tips"></div>
+                        </li>
+                        <li>
+                            <div class="topA backLine">
+                                <a href="javascript:;">高校测评(高校用户)</a>
+                                <div class="pro_tips"></div>
+                            </div>
+                            <div class="botA backLine">
+                                <a href="javascript:;">替代指标上报(高校用户)</a>
+                                <div class="pro_tips"></div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="topA noFont">
+                                <a href="javascript:;">审核测评(省厅用户)</a>
+                                <div class="pro_tips"></div>
+                            </div>
+                            <div class="botA noFont">
+                                <a href="javascript:;">审核替代指标上报(省厅用户)</a>
+                                <div class="pro_tips"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">生成发布年度评价数据(省厅用户)</a>
+                            <div class="pro_tips"></div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>                
+            </div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!-- end: main -->
+<!-- start: footer -->
+<div class="container footer">
+	<p class="text-center">浙ICP备05000083号&nbsp;&nbsp;&nbsp;&nbsp;E-Mail:webmaster.jyt@zj.gov.vn&nbsp;&nbsp;&nbsp;&nbsp;联系电话：0571-88008999 &nbsp;&nbsp;&nbsp;&nbsp;地址：杭州市文辉路321号</p>
+</div>
+<!-- end: footer -->
+<!-- Jquery -->
+<script src="assets/js/jquery-1.11.1-min.js"></script>
+<!-- Bootstrap Js -->
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- Echarts Js -->
+<script src="assets/plugins/echarts/echarts.min.js"></script>
+<!-- Echart_demo Js -->
+<script src="assets/js/echarts_demo.js"></script>
+
+
+<script>
+    // leftNav js
+    $(function(){
+        $(".leftsidebar_box dt img").attr("src","./assets/images/leftnav/close.png");
+        $(function(){
+            $(".leftsidebar_box dd").hide();
+            $(".leftsidebar_box dt").click(function(){
+                $(".leftsidebar_box dt").css({"background-color":"#066fcc"})
+                $(this).css({"background-color": "#066fcc"});
+                $(this).parent().find('dd').removeClass("menu_chioce");
+                $(".leftsidebar_box dt img").attr("src","./assets/images/leftnav/close.png");
+                $(".menu_chioce").slideUp();
+                $(this).parent().find('dd').slideToggle();
+                $(this).parent().find('dd').addClass("menu_chioce");
+                $(this).find('img').toggleClass("arrowOpen");
+                $(".leftsidebar_box dt img.arrowOpen").attr("src","./assets/images/leftnav/open.png");
+            });
+        })
+    })
+</script>
+</body>
+</html>
