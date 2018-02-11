@@ -20,4 +20,3 @@
 
 ![name2](./images/name2.png)
 
-modified by web
