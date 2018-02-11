@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 # jquery-demo说明
 #####multi-checkbox插件
 
 该文件夹中是关于下拉框和复选框结合的插件。
+=======
+######multi-checkbox插件
+
+该文件夹中是关于下拉框和复选框结合的插件。
+
 目前还不具备插件的功能，使用时需要按html文件中的结构编写。
 
 主要特点：
@@ -14,7 +20,7 @@
 
 效果如下图：
 
-![name](./images/name1.png)
+
+![name1](./images/name1.png)
 
 ![name2](./images/name2.png)
-
