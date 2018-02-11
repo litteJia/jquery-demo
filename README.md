@@ -1,5 +1,5 @@
 # jquery-demo说明
-#####multi-checkbox插件
+##### multi-checkbox插件
 
 该文件夹中是关于下拉框和复选框结合的插件。
 
